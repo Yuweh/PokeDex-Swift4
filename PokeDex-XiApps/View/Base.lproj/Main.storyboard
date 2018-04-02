@@ -34,19 +34,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedex-bg" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-fR-01W">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedexbg01" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-fR-01W">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-Wq-I39">
-                                <rect key="frame" x="49" y="131" width="277" height="103"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="9cZ-nD-PjM"/>
-                                    <constraint firstAttribute="width" constant="160" id="xAi-2R-EBz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="50"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-108" y="133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9MP-2z-qz1">
@@ -108,10 +98,13 @@
                                             <constraint firstAttribute="width" constant="30" id="Osn-4b-wGb"/>
                                             <constraint firstAttribute="height" constant="30" id="bsU-RE-xl3"/>
                                         </constraints>
-                                        <state key="normal" image="music.png"/>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="dc4-AE-gA6" eventType="touchUpInside" id="a2C-QB-no7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.76470588240000004" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="S8x-4I-vys"/>
                                     <constraint firstAttribute="bottom" secondItem="a0h-xC-aU1" secondAttribute="bottom" constant="8" id="XFo-oz-fVv"/>
@@ -195,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9he-RS-zSy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="133"/>
+            <point key="canvasLocation" x="649" y="133"/>
         </scene>
         <!--Pokemon Detail View Controller-->
         <scene sceneID="ZHG-R7-OAI">
@@ -234,7 +227,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.76470588240000004" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="0J7-dn-HMc"/>
                                     <constraint firstItem="ZJO-i1-QIA" firstAttribute="leading" secondItem="Jkw-iY-wRH" secondAttribute="leading" constant="8" id="HUn-bE-nS8"/>
@@ -435,7 +428,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.76470588240000004" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="09A-WO-lll"/>
                                     <constraint firstAttribute="trailing" secondItem="Pxf-ys-yZk" secondAttribute="trailing" id="YMs-j4-ElH"/>
@@ -482,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCl-XM-AG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="133"/>
+            <point key="canvasLocation" x="1391" y="133"/>
         </scene>
     </scenes>
     <resources>
@@ -491,7 +484,7 @@
         <image name="4" width="120" height="120"/>
         <image name="back" width="100" height="67"/>
         <image name="bg" width="1920" height="1200"/>
-        <image name="music.png" width="100" height="100"/>
-        <image name="pokedex-bg" width="540" height="960"/>
+        <image name="music" width="100" height="100"/>
+        <image name="pokedexbg01" width="320" height="569"/>
     </resources>
 </document>
