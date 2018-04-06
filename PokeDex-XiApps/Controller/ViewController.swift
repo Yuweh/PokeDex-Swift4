@@ -17,7 +17,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var inSearchMode = false
     
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var collection: UICollectionView!
     
     override func viewDidLoad() {
@@ -131,6 +130,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             collection.reloadData()
         }
     }
+
     
     
 }
