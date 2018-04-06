@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="pokemon.ttf">
-            <string>PokemonSolidNormal</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,29 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedex-bg" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-N9-BnM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedexbg01" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-N9-BnM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hq-nj-Qb1">
-                                <rect key="frame" x="49" y="204" width="277" height="103"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="4vz-ax-HhX"/>
-                                    <constraint firstAttribute="width" constant="160" id="fMe-vD-1jB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="50"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2Hq-nj-Qb1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="6mP-bn-dUt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Hq-nj-Qb1" secondAttribute="bottom" constant="360" id="8Vr-Sn-HC9"/>
-                            <constraint firstItem="2Hq-nj-Qb1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="184" id="NFf-Vb-JHo"/>
                             <constraint firstItem="wfK-N9-BnM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Qcw-1L-lLa"/>
                             <constraint firstItem="wfK-N9-BnM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W7O-O3-veN"/>
                             <constraint firstItem="wfK-N9-BnM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kRj-Le-LQj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Hq-nj-Qb1" secondAttribute="trailing" constant="49" id="l6B-r0-tmL"/>
                             <constraint firstItem="wfK-N9-BnM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="n1s-LB-CpZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pokedex-bg" width="540" height="960"/>
+        <image name="pokedexbg01" width="320" height="569"/>
     </resources>
 </document>
